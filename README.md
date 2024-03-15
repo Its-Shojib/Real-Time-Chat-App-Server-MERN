@@ -4,15 +4,17 @@
  [Click here]()
 
 ![Chat-App](https://i.ibb.co/DLqS6GM/image.png)
+![Chat-App](https://i.ibb.co/fYrVJR8/image.png)
 
 
 Some Features:
 
 -   🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
--   🎃 Authentication && Authorization with JWT
+-   💀 Authentication && Authorization with JWT
 -   ☠ Passward Cncrypted in MongoDB via bcrypt
 -   👾 Real-time messaging with Socket.io
 -   🚀 Online user status (Socket.io and React Context)
+-   🎵 Real-time chat notifications sounds
 -   👌 Global state management with Zustand
 -   🐞 Error handling both on the server and on the client
 -   ⭐ At the end Deployment like a pro for FREE!
