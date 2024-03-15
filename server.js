@@ -2,7 +2,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-
+import cors from 'cors';
 import authRoutes from "./backend/routes/auth.routes.js";
 import messageRoutes from "./backend/routes/message.routes.js";
 import userRoutes from "./backend/routes/user.routes.js";
@@ -13,7 +13,10 @@ import { app, server } from "./backend/socket/socket.js";
 const PORT = process.env.PORT || 5000;
 
 // const __dirname = path.resolve();
-
+app.use(cors({
+	origin: ["http://localhost:3000","https://realtime-chatt.netlify.app"],
+	credentials: true
+}));
 dotenv.config();
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body)
 app.use(cookieParser());
