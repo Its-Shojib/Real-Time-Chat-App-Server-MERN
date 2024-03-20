@@ -18,7 +18,7 @@ dotenv.config();
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(cors({
-	origin: ["http://localhost:5173","http://localhost:5000","https://realtime-chatt.netlify.app" ],
+	origin: ["http://localhost:5173","http://localhost:5000","https://realtime-chatt.netlify.app","https://real-time-chat-app-i3cm.onrender.com" ],
 	credentials: true
 }));
 
