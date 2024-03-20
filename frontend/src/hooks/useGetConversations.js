@@ -9,7 +9,7 @@ const useGetConversations = () => {
 		const getConversations = async () => {
 			setLoading(true);
 			try {
-				const res = await fetch("http://localhost:5000/api/users", {credentials: "include"});
+				const res = await fetch("https://real-time-chat-app-i3cm.onrender.com/api/users", {credentials: "include"});
 				const data = await res.json();
 				if (data.error) {
 					throw new Error(data.error);
